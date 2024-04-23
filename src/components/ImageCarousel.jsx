@@ -29,7 +29,7 @@ function ImageCarousel() {
           <img
             src={image}
             alt={`Image ${index + 1}`}
-            className="h-full w-full object-cover"
+            className="h-[80svh] w-full "
           />
         </div>
       ))}
