@@ -5,15 +5,14 @@ const businessHours = {
   wednesday: { open: "09:00", close: "18:00" },
   thursday: { open: "09:00", close: "18:00" },
   friday: { open: "09:00", close: "18:00" },
-  saturday: { open: "09:00", close: "18:00" },
-  sunday: { open: "09:00", close: "18:00" },
   // ... (continue for other days)
 };
 
 export function isCompanyOpenNow() {
   const now = DateTime.now().setZone("UTC+4"); // Set the desired time zone
-  console.log(now.toISO());
   const currentDay = now.weekdayLong.toLowerCase();
+
+  if (!businessHours[currentDay]) return false;
 
   const { open, close } = businessHours[currentDay];
   const [openHour, openMinute] = open.split(":").map(Number);

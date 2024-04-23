@@ -9,6 +9,7 @@ function GeneralInfo() {
     if (businessHours) {
       businessHours.scrollIntoView({
         behavior: "smooth",
+        block: "center",
       });
     }
   };

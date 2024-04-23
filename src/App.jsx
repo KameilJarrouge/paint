@@ -4,6 +4,9 @@ import ImageCarousel from "./components/ImageCarousel";
 import MainCard from "./components/MainCard";
 import TopNavigation from "./components/TopNavigation";
 import ImageDialog from "./components/Dialog";
+import AboutUsSection from "./components/AboutUsSection";
+import BusinessHoursSection from "./components/BusinessHoursSection";
+import PhotosSection from "./components/PhotosSection";
 
 function App() {
   const [src, setSrc] = useState("");
@@ -17,14 +20,14 @@ function App() {
       <div className="w-full md:w-[65vw] -translate-y-20 min-h-[10rem] flex flex-col items-center gap-8 px-2 md:px-0">
         <MainCard />
 
-        <p id="business-hours" className="w-full text-foreground ">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ipsum
-          repudiandae eos incidunt quasi sed culpa excepturi est, voluptate
-          recusandae quaerat, odit totam nesciunt quis quod nisi libero error
-          consequatur?
-        </p>
-
-        <Gallery setSrc={setSrc} />
+        {/* <p id="business-hours" className="w-full text-foreground ">
+          
+        </p> */}
+        <div className="px-2 w-full flex flex-col gap-4">
+          <AboutUsSection />
+          <BusinessHoursSection />
+          <PhotosSection setSrc={setSrc} />
+        </div>
       </div>
 
       <ImageDialog src={src} close={() => setSrc("")} />
