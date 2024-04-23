@@ -8,11 +8,11 @@ function App() {
     <main className="flex flex-col justify-start items-center">
       <div id="top" className=""></div>
 
-      <div className="w-full h-[80svh] flex justify-center items-center ">
+      <div className="w-full h-[80vh] ">
         <ImageCarousel />
       </div>
 
-      <div className="w-full md:w-[65vw] md:-translate-y-20 min-h-[10rem] flex flex-col items-center gap-8 ">
+      <div className="w-full md:w-[65vw] -translate-y-20 min-h-[10rem] flex flex-col items-center gap-8 ">
         <MainCard />
 
         <p id="business-hours" className="w-full text-foreground ">

@@ -8,8 +8,8 @@ function ImageCarousel() {
       autoplay
       loop
       autoplayDelay={7000}
-      transition={{ duration: 1.9 }}
-      className="rounded-b-3xl"
+      transition={{ duration: 0.5 }}
+      className="rounded-b-3xl h-full w-full"
       navigation={({ setActiveIndex, activeIndex, length }) => (
         <div className="absolute top-4  left-2/4 z-50 flex -translate-x-2/4 gap-2 bg-accent/50 hover:bg-accent/80 p-2 rounded-full">
           {new Array(length).fill("").map((_, i) => (
@@ -25,11 +25,11 @@ function ImageCarousel() {
       )}
     >
       {images.map((image, index) => (
-        <div key={index} className="relative h-full w-full">
+        <div key={index} className=" h-full w-full">
           <img
             src={image}
             alt={`Image ${index + 1}`}
-            className="h-[80svh] w-full "
+            className=" w-full h-full object-cover"
           />
         </div>
       ))}
