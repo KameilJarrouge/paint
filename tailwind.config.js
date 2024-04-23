@@ -8,7 +8,8 @@ module.exports = withMT({
       colors: {
         background: "#F5F5F5",
         accent: "#001F3F",
-        callToAction: "#39CCCC",
+        // callToAction: "#39CCCC",
+        callToAction: "#2BA6A6",
         foreground: "#212121",
       },
       fontFamily: {

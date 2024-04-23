@@ -11,7 +11,7 @@ function ImageCarousel() {
       transition={{ duration: 1.9 }}
       className="rounded-b-3xl"
       navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute top-4 left-2/4 z-50 flex -translate-x-2/4 gap-2 bg-accent/50 hover:bg-accent/80 p-2 rounded-full">
+        <div className="absolute top-4  left-2/4 z-50 flex -translate-x-2/4 gap-2 bg-accent/50 hover:bg-accent/80 p-2 rounded-full">
           {new Array(length).fill("").map((_, i) => (
             <span
               key={i}
