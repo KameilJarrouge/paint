@@ -1,6 +1,5 @@
 import React from "react";
-import { Dialog, DialogHeader, DialogBody } from "@material-tailwind/react";
-import { MdClose } from "react-icons/md";
+import { Dialog, DialogBody } from "@material-tailwind/react";
 
 export default function ImageDialog({ src, close }) {
   return (
